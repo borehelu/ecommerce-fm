@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="toggle_nav">
+          <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+        </button>
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+        <nav>
+          <button class="close_nav">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+          </button>
+          <li class="nav_item"><a href="#" class="nav_link">Collections</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Men</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Women</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+        </nav>
+        <div class="right">
+          <div class="cart">
+            <button class="cart_btn">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+            </button>
+            <div class="cart_container">
+              <h2 class="cart_header">Cart</h2>
+              <div class="hr"></div>
+              <div class="cart_list">
+              
+              </div>
+              <p class="empty-cart">Your cart is empty</p>
+            </div>
+          </div>
+
+          <button class="avatar">
+            <img src="assets/images/image-avatar.png" alt="user avatar" />
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="product_slider">
+          <div class="product_image">
+            <img src="assets/images/image-product-1.jpg" alt="product image" id="slider-image"/>
+            <button class="prevSlider btnslider">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button class="nextSlider btnslider">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="product_thumbnails">
+            <div class="active product_thumbnail">
+              <img
+                src="assets/images/image-product-1-thumbnail.jpg"
+                alt="product thumbnail"
+              />
+            </div>
+            <div class="product_thumbnail">
+              <img
+                src="assets/images/image-product-2-thumbnail.jpg"
+                alt="product thumbnail"
+              />
+            </div>
+            <div class="product_thumbnail">
+              <img
+                src="assets/images/image-product-3-thumbnail.jpg"
+                alt="product thumbnail"
+              />
+            </div>
+            <div class="product_thumbnail">
+              <img
+                src="assets/images/image-product-4-thumbnail.jpg"
+                alt="product thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product_detail">
+          <h2 class="company">sneaker company</h2>
+          <h1 class="product_name">fall limited edition sneakers</h1>
+          <p class="product_description">
+            These low profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="product_pricing">
+            <div>
+              <p class="discounted_price">$125.00</p>
+              <p class="discount">50%</p>
+            </div>
+            <p class="original_price">$250.00</p>
+          </div>
+          <div class="product_quantity">
+            <div class="quantity">
+              <button class="minus">
+                <img src="assets/images/icon-minus.svg" alt="minus" />
+              </button>
+              <p class="quantity_text">0</p>
+              <button class="plus">
+                <img src="assets/images/icon-plus.svg" alt="subtract" />
+              </button>
+            </div>
+            <button class="checkout_btn">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#69707D"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal hide">
+      <div class="modal_container">
+        <button class="close_modal">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div class="current_img">
+          <img src="assets/images/image-product-1.jpg" alt="product-image" id="currentImg" />
+          <button class="prev btn_slider">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="next btn_slider">
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="thumbnails">
+          <div class="thumbnail active">
+            <img
+              src="assets/images/image-product-1-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="assets/images/image-product-2-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="assets/images/image-product-3-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="assets/images/image-product-4-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
