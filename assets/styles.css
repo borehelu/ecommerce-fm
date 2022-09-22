@@ -312,7 +312,7 @@ main {
 
 .quantity {
   padding: 1rem;
-  background-color: var(--pale-orange);
+  background-color: var(--light-grayish-blue);
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
